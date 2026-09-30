@@ -1,0 +1,6 @@
+{
+  "name": "Coding Connoisseurs FOET — Gallery & Events Hub",
+  "description": "The official event media gallery and community portal for Coding Connoisseurs, Faculty of Engineering & Technology, University of Lucknow.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

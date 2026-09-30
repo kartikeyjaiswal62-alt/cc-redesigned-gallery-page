@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #faf7ef;
+  --white: #fff;
+  --maroon: #6c233d;
+  --maroon-dark: #421627;
+  --pink: #f7b8c4;
+  --red: #ff6b5b;
+  --green: #6fcf97;
+  --cyan: #5fd3d3;
+  --yellow: #ffd166;
+  --gold: #d9a441;
+  --silver: #9ba6ae;
+  --bronze: #b87333;
+  --ink: #1d1b2e;
+  --text: #1d1b2e;
+  --muted: #6e6b7c;
+  --border: #1d1b2e1f;
+  --sh-sm: 3px 3px 0 var(--ink);
+  --sh: 5px 5px 0 var(--ink);
+  --sh-lg: 8px 8px 0 var(--ink);
+  --bw: 2px;
+  --font-display: 'Archivo', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-body);
+    background-color: var(--bg);
+    color: var(--text);
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Authentic page grid pattern from ccfoet.vercel.app */
+.page-grid {
+  background-color: var(--bg);
+  background-image: linear-gradient(#1d1b2e0e 1px, transparent 1px), linear-gradient(90deg, #1d1b2e0e 1px, transparent 1px);
+  background-size: 32px 32px;
+  min-height: calc(100vh - 72px);
+}
+
+/* Hero texture from ccfoet */
+.hero-maroon {
+  background-color: var(--maroon);
+  background-image: radial-gradient(#ffffff14 1.5px, transparent 1.5px);
+  background-size: 26px 26px;
+}
+
+/* Star shape from ccfoet */
+.shape-star {
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+/* Neo-brutalist buttons from ccfoet */
+.btn-brutal-yellow {
+  background: var(--yellow);
+  color: var(--ink);
+  border: var(--bw) solid var(--ink);
+  box-shadow: var(--sh-sm);
+  font-family: var(--font-display);
+  font-weight: 700;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.btn-brutal-yellow:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--sh);
+}
+
+.btn-brutal-maroon {
+  background: var(--maroon);
+  color: var(--white);
+  border: var(--bw) solid var(--ink);
+  box-shadow: var(--sh-sm);
+  font-family: var(--font-display);
+  font-weight: 700;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.btn-brutal-maroon:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--sh);
+}
+
+.btn-brutal-white {
+  background: var(--white);
+  color: var(--ink);
+  border: var(--bw) solid var(--ink);
+  box-shadow: var(--sh-sm);
+  font-family: var(--font-display);
+  font-weight: 700;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.btn-brutal-white:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--sh);
+}
+
+/* Filter tab from ccfoet */
+.cc-ftab {
+  background: var(--white);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 9px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+.cc-ftab:hover {
+  border-color: var(--maroon);
+  color: var(--maroon);
+}
+.cc-ftab.active {
+  background: var(--maroon);
+  color: var(--white);
+  border: var(--bw) solid var(--ink);
+  box-shadow: var(--sh-sm);
+}
+
+/* Neo-brutalist card container */
+.cc-card {
+  background: var(--white);
+  border: var(--bw) solid var(--ink);
+  box-shadow: var(--sh);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.cc-card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: var(--sh-lg);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #d4cfbe;
+  border-radius: 9999px;
+  border: 1px solid var(--ink);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--maroon);
+}
